@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69849C17-FD2A-4D9B-B25F-CE10360CA2A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Удаление жителя по разным причинам.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Удаление жителя по разным причинам.Designer.cs">
+      <DependentUpon>Удаление жителя по разным причинам.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Список выбывших жителей.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Список выбывших жителей.Designer.cs">
+      <DependentUpon>Список выбывших жителей.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Редактирование.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Редактирование.Designer.cs">
+      <DependentUpon>Редактирование.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Вход в программу.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Вход в программу.Designer.cs">
+      <DependentUpon>Вход в программу.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Меню.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Меню.Designer.cs">
+      <DependentUpon>Меню.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Добавление.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Добавление.Designer.cs">
+      <DependentUpon>Добавление.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Поиск.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Поиск.Designer.cs">
+      <DependentUpon>Поиск.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Пароль.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Пароль.Designer.cs">
+      <DependentUpon>Пароль.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Вывод.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Вывод.Designer.cs">
+      <DependentUpon>Вывод.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Вывод для пользователя.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Вывод для пользователя.Designer.cs">
+      <DependentUpon>Вывод для пользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Удаление жителя по разным причинам.resx">
+      <DependentUpon>Удаление жителя по разным причинам.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Список выбывших жителей.resx">
+      <DependentUpon>Список выбывших жителей.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Редактирование.resx">
+      <DependentUpon>Редактирование.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Вход в программу.resx">
+      <DependentUpon>Вход в программу.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Меню.resx">
+      <DependentUpon>Меню.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Добавление.resx">
+      <DependentUpon>Добавление.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Поиск.resx">
+      <DependentUpon>Поиск.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Пароль.resx">
+      <DependentUpon>Пароль.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Вывод.resx">
+      <DependentUpon>Вывод.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Вывод для пользователя.resx">
+      <DependentUpon>Вывод для пользователя.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
